@@ -1,0 +1,24 @@
+server:
+  port: 9091
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+#    fetch-registry: false
+#    register-with-eureka: false
+
+spring:
+  application:
+    name: RESTORENT-SERVICE
+  datasource:
+    url: jdbc:mysql://localhost:3306/restorentdb
+    username: root
+    password: Sachvu@19
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
